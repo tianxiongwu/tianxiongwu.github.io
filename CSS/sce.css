@@ -1,0 +1,515 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .6vw 0.6vw;
+    transition: 0.6s;
+    padding: 10px 50px;
+    z-index: 1000000;
+    font-weight: 400;
+}
+
+.sticky {
+    padding: 1px 20px;
+    color: antiquewhite;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+
+}
+
+.nav_bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_bar .current {
+    color: rgb(168, 204, 235);
+    font-weight: 400;
+}
+
+.nav_bar li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding: 0px 1.19vw;
+}
+
+.nav_bar li a {
+    transition: all 0.5s ease 0s;
+
+    font-size: 17px;
+    color: #333;
+}
+
+.nav_bar li a:hover {
+    color: rgb(91, 181, 255);
+}
+
+header .logo {
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+h2 {
+    color: rgb(48, 118, 176);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 2;
+
+}
+
+h1 {
+    color: rgb(60, 106, 85);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 2.5;
+
+}
+
+h1::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background: rgb(60, 106, 85);
+    margin-top: 11px;
+    margin-right: 10px;
+}
+
+h3 {
+    color: rgb(237, 210, 101);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h4 {
+    color: rgb(91, 181, 255);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+.backtop {
+    font-size: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: black;
+    transition: all 0.5s ease 0s;
+}
+
+.backtop:hover {
+    color: rgb(48, 118, 176);
+}
+
+.project_member {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    padding: 30px;
+    border-radius: 5px;
+
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.margin20 {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.margin15 {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.padding20 {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.padding15 {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.width30 {
+    width: 30%;
+}
+
+.width70 {
+    width: 70%;
+}
+
+.paddingb {
+    padding-bottom: 5%;
+}
+
+
+
+.margin20 p
+{
+    line-height: 1.8;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sce {
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.overview {
+    font-size: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+    padding: 30px;
+}
+
+.problem {
+    padding-top: 4%;
+    padding-bottom: 5%;
+
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(237, 210, 101);
+    ;
+}
+
+.competitive {
+    margin-top: 5%;
+}
+
+.quote {
+
+
+    border-left: 6px solid #ccc;
+    padding: 40px 220px;
+
+}
+
+.problem h2 {
+    position: relative;
+    display: block;
+    font-size: 25px;
+}
+
+.problem p {
+    position: relative;
+    display: block;
+}
+
+.problem img {
+    width: 30%;
+
+    display: block;
+}
+
+
+
+
+@media only screen and (max-width:770px) {
+
+    .problem,
+    .project_detail,
+    .users {
+        width: 100%;
+    }
+}
+
+.users {
+    padding-top: 150px;
+    display: inline-block;
+}
+
+.comparsion {
+    float: left;
+
+}
+
+.problems {
+    float: left;
+    max-width: 100%;
+
+}
+
+.ideate {
+    display: flex;
+}
+
+.ideate h2 {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 30px;
+}
+
+.ideate h2>p {
+    color: black;
+    font-size: 30px;
+}
+
+.concerns {
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    height: 220px;
+    border-radius: 5px;
+    z-index: 1;
+    padding-bottom: 50px;
+}
+
+.concerns p {
+    border: 1px solid #eee;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 9%);
+    width: 20%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 25px;
+    font-weight: 400;
+
+
+}
+
+p>em {
+    color: rgb(79, 86, 142);
+    font-weight: bolder;
+    font-weight: 400;
+}
+
+.usability {
+    padding-top: 100px;
+
+    padding-bottom: 150px;
+}
+
+.redesign h1 {
+    text-align: center;
+    padding: 5%;
+
+    font-weight: 400;
+}
+
+.demo {
+    max-width: 100%;
+}
+
+.redesign {
+
+    background-color: rgba(137, 184, 162, 0.37);
+}
+
+
+
+.finaldesign {
+    background-color: rgba(93, 160, 100, 0.685);
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.finaldesign p {
+    color: whitesmoke;
+    line-height: 1.8;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 300;
+}
+
+.hifi img {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.hifi h4 {
+    color: rgb(79, 86, 142)
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+.swiper-slide {
+
+
+
+
+    /* Center slide text vertically */
+
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+
+}
+
+.sketch img {
+    display: block;
+    width: 70%;
+
+    object-fit: cover;
+}
+
+
+
+
+
+footer {
+    float: left;
+    margin-top: 11.9vw;
+    margin-right: 11.9vw;
+    margin-left: 11.9vw;
+
+    margin-bottom: 90px;
+}
+
+footer a {
+    transition: all 0.5s ease 0s;
+    color: black;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+footer a:hover {
+    color: gray;
+}
+
+footer i {
+    font-size: 25px;
+    transition: all 0.5s ease 0s;
+    color: black;
+}
+
+footer i:hover {
+    color: gray;
+}
+
+footer p {
+    color: grey;
+    font-weight: 300;
+}
+
+.footnotes {
+    font-size: 10px;
+}
+
+@media only screen and (max-width:770px) {
+    .demo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+@media only screen and (max-width:770px) {
+
+    footer,
+    section {
+        padding-right: 5px;
+        padding-left: 5px;
+
+    }
+}
+
+@media only screen and (max-width:770px) {
+
+    .users,
+    .usability {
+        padding-right: 20px;
+        padding-left: 20px;
+
+    }
+}
+
+@media only screen and (max-width:770px) {
+
+    .problem,
+    .project_detail,
+    .users,
+    .usability {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:770px) {
+    footer a {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width:770px) {
+    footer p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:770px) {
+
+    .nav_bar li a,
+    .logo {
+        font-size: 13px;
+        width: 40px;
+    }
+}

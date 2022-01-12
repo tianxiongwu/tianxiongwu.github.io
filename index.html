@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Tianxiong Wu
+EMAIL: tianxiw1@uci.edu
+-->
+<!--for all pages -->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="author" content="Tianxiong Wu">
+  <meta name="description" content="main page (index)">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- you would link to an external stylesheet here! -->
+  <!-- you would also link to Bootstrap here! -->
+  <script src="https://kit.fontawesome.com/da30a11cb5.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>
+    Tianxiong Wu | Portfolio
+  </title>
+  <link rel="icon" href="/Images/logo2.png" />
+  
+  <link href="CSS/index.css" type="text/css" rel="stylesheet" />
+</head>
+
+
+
+<body>
+  <video loop muted autoplay>
+    <source src='/portfolio.mov' type='video/mp4'>
+
+  </video>
+  <header>
+    <a href="index.html">
+      <img class="logo" src="Images/logo.png" alt="logo" />
+    </a>
+
+    <nav>
+      <ul class="nav_bar">
+        <li><a class="current" href="/index.html">Work</a></li>
+        <li><a href="/resume.html">Resume</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://www.linkedin.com/in/tianxiong-wu-96a751146/" target="_blank"><em
+              class="fab fa-linkedin"></em></a></li>
+      </ul>
+    </nav>
+  </header>
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 10);
+    })
+  </script>
+
+
+  <!--for all pages -->
+  <section class="introduction">
+    <div class="greeting">
+      <h1>Hi, I'm
+        <span class="txt-type" data-wait="3000"
+          data-words=' ["Tianxiong.", "a Developer.", "a Designer.", "a Creator."] '></span>
+      </h1>
+      <p>DEVELOPER &nbsp//&nbsp DESIGNER &nbsp//&nbsp CREATOR &nbsp // &nbsp STUDENT</p>
+    </div>
+    <!-- <p>
+        UX/UI designer, developer, and researcher 
+        fascinated by the social product space. 
+        Focused on creating meaningful experiences 
+        for people rooted in empathy.
+      </p>
+    
+      <p>
+        Currently based in Irvine.
+      </p>
+    </div>
+    
+    <a href="#work">
+      <div class="showbar">
+        <p>Check out my work</p>
+      </div>
+    </a>
+    <br><br> -->
+
+  </section>
+  <a href="#work" class="jumptowork"><em class="far fa-arrow-alt-circle-down"></em></a>
+
+  <section class="work" id="work">
+    <div class="featuredProject">
+      <p>FEATURED PROJECTS</p>
+    </div>
+    
+
+
+
+    </article>
+    <article class="project-card w-inline-block">
+
+      <div class="project_detail">
+        <a href="sce.html"><img class="logos" src="Images/innovation lab/logo.png" alt="SCE logo" 
+            sizes="(max-width: 767px) 100vw, 500px"></a>
+        <div class="project_des">
+          <a href="sce.html">
+            <p class="title">Home Infusion Digital Instruction</p>
+          </a>
+          <p class="year">2020 - 2021</p>
+
+
+          <p class="description">
+            A medical website provides home infusion therapy patients with tutorials, schedules, and more.
+          </p>
+
+          <p class="tag">UI/UX</p>
+          <p class="tag">Backend Programming</p>
+          <p class="tag">Usability Testing</p>
+
+
+          <a href="sce.html">
+
+            <div class="viewCase">View Case Study</div>
+
+          </a>
+        </div>
+
+
+      </div>
+
+
+
+    </article>
+    <article class="project-card w-inline-block">
+
+      <div class="project_detail">
+        <a href="sce.html"><img class="logos" src="Images/sce/SCE.png" alt="SCE logo" width="500"
+            sizes="(max-width: 767px) 100vw, 500px"></a>
+        <div class="project_des">
+          <a href="sce.html">
+            <p class="title">Southern California Edison</p>
+          </a>
+          <p class="year">2019</p>
+
+
+          <p class="description">
+            A 10-weeks long research study into My SCE App and redesign.
+          </p>
+
+          <p class="tag">UI/UX</p>
+          <p class="tag">Product Design</p>
+          <p class="tag">User Research</p>
+          <p class="tag">Usability Testing</p>
+
+
+          <a href="sce.html">
+
+            <div class="viewCase">View Case Study</div>
+
+          </a>
+        </div>
+
+
+      </div>
+
+
+
+    </article>
+
+
+
+
+
+
+
+  </section>
+  <!--for all pages -->
+  <footer>
+    <a href="mailto:tianxiongwu@hotmail.com">tianxiongwu@hotmail.com</a>
+    <br><br>
+    <p>
+      Focus on details. <br>
+      Let's get in touch.
+    </p>
+    <br>
+    <a href="https://www.behance.net/tianxiongwu" target="_blank"><em class="fab fa-behance-square"></em></a>
+    <a href="https://github.com/tianxiongwu" target="_blank"><em class="fab fa-github-square"></em></a>
+
+    <p class="footnotes">
+      This site is hand-crafted with care.
+      <br>
+      Copyright © Tianxiong Wu.
+    </p>
+  </footer>
+  <script src="js/typewriter.js"></script>
+  <!--for all pages -->
+</body>
+
+
+</html>
