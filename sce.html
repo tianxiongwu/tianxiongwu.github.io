@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Tianxiong Wu
+EMAIL: tianxiw1@uci.edu
+-->
+<!-- for all pages -->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="author" content="Tianxiong Wu">
+  <meta name="description" content="Project SCE">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- you would link to an external stylesheet here! -->
+  <!-- you would also link to Bootstrap here! -->
+
+  <script src="https://kit.fontawesome.com/da30a11cb5.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>
+    Tianxiong Wu | SCE Redesign
+  </title>
+  <link rel="icon" href="/Images/logo2.png" />
+  <link href="CSS/sce.css" type="text/css" rel="stylesheet" />
+</head>
+
+
+
+<body>
+  <header>
+    <a href="index.html">
+      <img class="logo" src="Images/logo2.png" alt="logo" />
+    </a>
+
+    <nav>
+      <ul class="nav_bar">
+        <li><a href="/index.html">Work</a></li>
+        <li><a href="/resume.html">Resume</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://www.linkedin.com/in/tianxiong-wu-96a751146/" target="_blank"><i
+              class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 10);
+    })
+  </script>
+
+  <!-- for all pages-->
+
+  <section>
+    <img class="sce" src="Images/sce/sce_large.jpg" alt="sce logo">
+    <a href="#" class="backtop"><em class="fas fa-chevron-up"></em></a>
+    <article class="overview margin20">
+      <h1>Overview</h1>
+      <p>
+        My SCE is a utility app for SoCal Edison. It is mainly used for managing SCE accounts, reporting and checking
+        power outages,
+        and finding information about SCE services and programs. My SCE is a fairly simple and straightforward app, and
+        therefore usable
+        by almost everyone. However, it has a very poorly designed user interface, which looks almost identical as SoCal
+        Edison’s website.</p>
+      <br>
+
+      <br>
+      <h1>Outcome</h1>
+      <p>
+        In order to address the problem, we redesigned My SCE as a whole, and <em>focus on its relationship with SCE's
+          website</em>.
+      </p>
+    </article>
+
+    <article class="project_member margin20">
+      <div class="width30">
+        <h2>Role</h2>
+        <p>UX Researcher</p>
+        <p>Visual Designer</p>
+      </div>
+      <div class="width30">
+        <h2>Team</h2>
+        <p>
+          Lucy Cao<br>
+          Nick Lyu<br>
+          Yingyu Yang<br>
+          Tianxiong Wu
+        </p>
+      </div>
+
+      <div class="width30">
+        <h2>Timeline</h2>
+        <p>Jan. - Mar. 2019 <br>
+          (10 weeks)</p>
+      </div>
+    </article>
+
+    <div class="problem padding20">
+      <div class="problem_des">
+        <h1 class='width70'>Problem</h1>
+        <h2 class="width70">Same layout, yet a different experience</h2>
+        <p class="width70">
+          It is appeared to be that their developing team use the same code base without considering
+          about the different focuses and features would be on mobile app.
+        </p>
+        <br>
+        <p class="width70">We embarked on a resarch journey to get a detailed view of how target audiences value the
+          most on an utility app.</p>
+      </div>
+      <img src="Images/Something_went_wrong copy.png">
+    </div>
+
+
+    <div class="competitive margin20">
+      <h1>Competitive Analysis</h1>
+      <div class='quote width70'>
+        <p>
+          <em>If you want to get a lay of the land before you dive in, and the best way to do that is by looking around
+            and seeing who else is in the space with you.</em>
+          <br>---- Professor Bietz
+        </p>
+      </div>
+      <h2>Comparing and Contrasting Market Offerings</h2>
+      <p>
+        We examed four competitors - <em>DWP Rates, SDG&E, SoCalGas, Cox Connect</em>. The main service My SCE and other
+        offerings provide is a way for its customers to be able to pay their utility bills through mobile devices and
+        find information about what services are provided by their utility company.
+      </p>
+      <br>
+      <p>
+        A common set of functionality between the different electric utility apps include:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Seeing / Paying bills<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. An outage map listing where planned and unplanned outages are
+        taking place<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Reporting outages<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Cost calculator that adds up energy costs from appliance use or
+        overall energy use<br>
+      </p>
+      <br>
+      <p>My SCE provides all the information and features that you could find on their main website, while other apps
+        provide a more simplistic interface which
+        provides a smaller set of information. The downside to this approach is that the interface mostly copies the
+        website’s layout, so looking through the information is cumbersome on the mobile app. </p>
+      <br>
+      <p>
+        Since energy companies service a specific coverage area, the user base for each app corresponds to homeowners
+        and businesses found in those areas. Southern California Edison, whose app is the main interface we explored,
+        services electricity to much of Southern California. Other electricity utilities operate in locations where SCE
+        is not operating out of, as each utility company has a monopoly over the area they provide for. <br><br>This
+        means that
+        even the direct competitors for delivering electricity don’t overlap in customers. That being said, the Southern
+        California Gas Company (SoCalGas), a gas utility company, offers its services to the same households and
+        businesses that SCE provides electricity to.
+      </p><br>
+      <p>The opportunity to strengthen its mobile platform is a way for SCE to make itself stand out above the others
+        and provide a modern solution for its customers to manage their utility expenses.</p>
+    </div>
+    <br>
+
+
+
+
+
+
+    <article class="users margin20">
+      <img class="comparsion" src="Images/sce/SCEcomparison.png" alt="old version of SCE" width="500">
+      <h1>User Research</h1>
+
+      <h2>Study Objectives</h2>
+      <p>Considering the user base of SCE and its app, we want to feature understand the relationship between the mobile
+        app and uitlity services. Thus, we list out the following study Objectives.
+        Our interview and survey questions also based on these three topic.
+      </p>
+      <p>1. How do mobile apps support a certain lifestyle?</p>
+      <p>2. Are there different expectations for what a mobile app should do versus what a website should do?
+        (features/characteristics people would like the app to possess)</p>
+      <p>3. What role does technology play in bill paying and solving utility-related problems?</p>
+      <br>
+      <h2>Research Method</h2>
+      <p>To better understand our target user group, we use <em>semi-structured interviews</em> and a <em>survey</em> as
+        our methods
+        to acquire the data that we need. As a result, We have <em>10</em> interviewers and <em>42</em> survey
+        participants.
+        <p>We asked questions relating to demographics, mobile app use, and bill payment strategies. The interview
+          subjects are selected from our friends who pay their own utility bills. Since one of our target population
+          groups is college students whose age in range of 18 to 22, our focus
+          would be on finding how they pay their bills as well as hearing their complaints on current payment method and
+          other problems that bothered them while using services.</p>
+
+        <p>Reaching out to our other target population, older homeowners, was more difficult to do.
+          Some of our members were able to rely on family members to participate in our interviews, but for the surveys
+          we didn’t have a
+          convenient communication channel to get as many participants as we would have hoped.
+        </p>
+        <br>
+        <div class="ideate">
+          <h2>Ideate<p>After conducting interviews, I transcribed the interviews and created the Affinity Diagram that
+              contains
+              all
+              the pain points,
+              desires, and their past experiences of using utility apps.</p>
+            <p>This helped us to organize our thoughts and notes, also gave me the initial idea of redesign.</p>
+          </h2>
+
+          <div>
+            <img src="Images/sce/affinity1.png" width="400">
+            <img src="Images/sce/affinity2.png" width="400">
+            <img src="Images/sce/affinity3.png" width="400"></div>
+        </div>
+
+        <br>
+        <div class="population">
+          <h2>Target Population</h2>
+          <p>
+            Our main target populations are <em>college students</em> that rent an apartment or a room and <em>working
+              homeowners</em>.</p>
+          <br>
+          <h3>College Students</h3>
+
+          <p> For many college students, they are new to living on their own. The lack of experience in living on their
+            own means an unfamiliarity with paying bills.</p>
+          <h4>Their concerns...</h4>
+          <br>
+          <div class="concerns">
+            <p>I want an easier way to pay bills, like Apple Pay</p>
+            <p>Wish I can deal all utility-related problems in one place</p>
+            <p>I would like to have an app that notifies my bills, usage, etc.</p>
+            <p>I would like an easier way to contact SCE to deal with outage</p>
+          </div>
+
+          <h3>Homeowners</h3>
+          <p>
+            Homeowners generally in a higher economic class compared to renters or even younger homeowners. Concerning
+            older homeowner, some of the assumptions that we made when we first selected them as our target
+            population turned out to be incorrect.
+            <p>We assumed that they would be less tech knowledgeable, which would affect their preferences in paying
+              their electric bill. This wasn’t the case,
+              as our interviewees and survey respondents stated that they were comfortable in using the web or mobile
+              apps in their daily lives. </p>
+            <p> Their preference towards the website in particular was
+              based on <em>how conveniently using the interface</em> fit in with their lifestyle rather being unable to
+              use the
+              mobile platform.</p>
+
+          </p>
+          <h4>Their concerns...</h4>
+          <br>
+          <div class="concerns">
+            <p>Be able to qucikly access the bills and statement</p>
+            <p>If I could manage Auto Pay on phone that would be nice</p>
+            <p>Have online chat feature so I do not have to call them</p>
+            <p>Push me notifications when the bill is ready</p>
+          </div>
+
+        </div>
+
+        <div class='finding'>
+          <h2>Findings</h2>
+          <p>According to our research on direct and indirect competitors, we have a thorough understanding of what My
+            SCE as an utility company’s app should focus on.
+          </p>
+          <p>We did find out that some of our users are not comfortable with a subscription payment, and they
+            inevitably, at least sometimes, missed the payment due, which can lead to overdue penalization fee or even
+            utility shut downs.
+            In this circumstance, having a <em>reminder feature</em> is preferable for those people who always forget to
+            pay bill on time.
+          </p>
+          <p>
+            Another interesting finding is that, in <em>younger male demographic group</em>, interviewees and survey
+            takers would like to have the option to use modern online payment methods rather than credit cards.
+            They have listed Venmo, Apple Pay for preferred payment methods.
+          </p>
+          <p>
+            In addition, A common quality that both of our target populations wanted to see was an interface that was
+            both <em>easy and convenient to use. </em></p>
+          <p><em>Students</em> wanted to see a well-designed mobile app so that they could pay bills or deal
+            with emergencies since they’re always moving from one place to the next and won’t always have access to a
+            computer. <br>
+            <em>Older participants</em> favored the use of a website precisely
+            because it fit in with how much time they spent at work or at home.
+          </p>
+        </div>
+
+
+    </article>
+
+    </article>
+    <article class="usability margin20">
+      <h1>Usability Issues</h1>
+      <h2>Methods</h2>
+      <p>We conducted usability tests and Cognitive Walkthrough to acquire the information that we need.
+      </p>
+      <h3>Usability Tests</h3>
+      <p>For the usability tests, the participants were given five tasks to complete in My SCE application. The
+        participants of the usability tests were friends / classmates who had the time to assist us in our user
+        research.
+        Each usability test took about 20 minutes, accounting for both the usability test and the follow-up questions
+        and discussion.
+        <p> Participants were asked to complete the following tasks while thinking aloud:</p>
+        <p>1. Pay electric bill for this month</p>
+        <p>2. Find customer service information</p>
+        <p>3. Check power outage in a certain area (via zip code)</p>
+        <p>4. Change first name</p>
+        <p>5. Report power outage for home or business</p>
+      </p>
+      <h3>Cognitive Walkthrough</h3>
+      <p>The cognitive walkthrough involved every member of the redesign team, each member an expert user of the app,
+        and sought to uncover usability issues in the UI. For the cognitive walkthrough, the redesign team analyzed
+        three key tasks to identify potential usability issues:</p>
+      <p>1. Change user’s first name</p>
+      <p>2. View payment history for the month of February 2018</p>
+      <p>3. Use search function to find bill statement</p>
+
+      <br>
+      <div class="usability-finding">
+        <h2>Findings</h2>
+        <h3>Signifier and affordance mismatch</h3>
+
+        <p>In one of the tasks in the usability test, participants are asked to change the displayed name of the
+          electricity account. Through this task, we find some problems with the signifier for the account management
+          feature.</p>
+        <p><em>The correct signifier for Account Management is bound to the wrong affordance</em>
+          (Account Services button), and the wrong/unclear signifier (Identity button) is bound to the
+          correct affordance. </p>
+        <br>
+        <h3>False signifier</h3>
+
+        <p> When users try to view the history of statements, the text “View Bill” is underlined and colored in green,
+          which makes it look like
+          clickable.
+          As we expect some kind of statement document to pop up, <em>nothing happens when the fake hyperlink is
+            clicked</em>.
+          It’s misleading, and violates
+          usability principles.
+        </p>
+        <br>
+        <h3>Fails to provide easy reversal of actions</h3>
+
+        <p>
+          Some of the pages are <em>failed to provide a way to reverse actions</em>. </p>
+        <p>For example, When filing outage report, users are presented with a 5-step process with no back/previous
+          button. If a user
+          made a mistake in a previous step, the only way to fix it is to click on ‘cancel’ and start over.
+        </p>
+        <br>
+        <h3>Bad interface layout </h3>
+
+        <p>
+          <em>The mobile application has the identical interface as the website</em>. This causes many basic functions,
+          such as
+          zooming and going back, fail to work on the app at all. In addition to that, some redundant designs results in
+          difficult to
+          access the basic features, and greatly
+          reduce the user experience as well.
+        </p>
+        <br>
+        <h3>Some interface components do not appear properly</h3>
+
+        <p>
+          This problem worsens users’ overall user experience with the app. There are
+          several places where the <em>inconsistency appears</em>.
+        </p>
+        <br>
+        <h3>Results do not meet the expectation</h3>
+
+        <p>
+          When users
+          have trouble finding a feature or doesn’t feel like navigating through the menu,
+          <em>the search bar would be a very useful tool in finding the desired page within the app</em>.</p>
+        <p>
+          The reality of the current
+          search functionality, however, was far from that. When we typed in the keywords
+          of a feature we wanted to use, <em>the app simply came up with a
+            internet-browser-like page with the results from a web search</em> using the keywords
+          we supplied.
+
+        </p>
+      </div>
+
+
+
+    </article>
+  </section>
+
+  <article class="redesign">
+
+    <div class="margin20 paddingb">
+      <h1>Redesign</h1>
+      <h2>Early Phase</h2>
+      <h3>Design Focus</h3>
+      <p>
+        Some key points about our new design:<Br>
+        1. User interface should be simple and straightforward<br>
+        2. Highlight the core features by using the Gestalt laws and size, as well as the
+        visual hierarchy<br>
+        3. Complied with design specifications, but not with heavy graphic design<br>
+        4. Design should be smooth and not overwhelm<br>
+
+      </p>
+      <br>
+      <h3>Sketches</h3>
+      <p>
+        With the design goal in mind, we each sketched some redesign ideas. Then, we got together and presented our
+        solutions and voted for the
+        one we want for the app.
+      </p>
+      <p>Here are some of our initial sketches:</p>
+
+
+
+
+      <div class="swiper mySwiper sketch">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Images/sce/sketch1.png" alt="sketch1">
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/sce/sketch2.png" alt="sketch2">
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/sce/sketch3.png" alt="sketch3">
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/sce/sketch4.png" alt="sketch4">
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/sce/sketch5.png" alt="sketch5">
+          </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+
+
+      <h2>Agreeing to the Best Solution</h2>
+      <p>There were contentions about if we should use Nick's interaction idea (Shown as Sketch#1) or other traditional
+        design. </p>
+      <p>
+        As the figure shows above, the home page of the app has the main funcitons of the app placed vertically at the
+        center of the screen. When user
+        click one of the buttons, "Pay" for example, it would zoomin and shows the billing page. If the button is at
+        left of the page, user slides left to
+        go back; if at right side, then slide right.
+      </p>
+      <p>It is a very interesting way of interaction. Nevertheless, we decided to use the traditional interaction
+        considering the characteristics and
+        target audience of the app. Not everyone is tech-savvy, a new interaction design might increase learing curve
+        greatly which was not what we want
+        for an utility app.
+      </p>
+    </div>
+
+
+
+    <div class="finaldesign padding20">
+      <h2>High-Fidelity Prototypes</h2>
+      <h3>Design Concept</h3>
+      <p>
+        For the final design, I organized the redundant funcitons by redesigning the menu bar and puting common features
+        (e.g. Outage, Usage) into a individual section.
+      </p>
+      <p>
+        I took black out of the color schemes. <br>
+        The combination of black and white usually gives people the feeling of insecure. As an electricity company, we
+        do not want this happens. Hence, we widely used
+        yellow and dark green because they are mtch with the characteristics of an electricity app. <br>
+        Yellow represents vigor and vitality; dark green represents green energy. I deem that the color selection would
+        make the whole app calm and safe yet incandescent.
+      </p>
+      <p>
+        In addition, I reworked "My Home" section at Discover page. Each section of this page could also be a great
+        place to promote advertisements.
+        While users browsering energy saving tips articles here, electrical appliances suggestions can be also included.
+      </p>
+      <br>
+      <h3>Hi-Fi Design</h3>
+      <br>
+      <div class="swiper mySwiper hifi">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Images/sce/demo1.png" alt="redesign 1">
+            <h4>
+              Login Page
+              <br>
+              <p>
+                1. The overall design of the app is not modern and user friendly. So we chose to redesign
+                the whole app from the beginning in order to have a consistent UI design. <br>
+                <p>2. The simplicity and planarization were important for an mobile App in 2019.
+                  Nevertheless, after we delved into the color schemes more, the intention of the color became more and
+                  more clear for us.
+                  So in the login page, we decided to add more bright yellow and made the App looks more friendly. </p>
+              </p>
+            </h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/sce/login old.png" alt="sketch2">
+            <h4>Problems
+              <p>
+                1. The main colors of the login interface are black and yellow. This becomes a problem that usually the
+                combination of
+                these two colors represents warning and caution. <br>
+                <p>
+                  2. The interface design violates the design guideline of Apple iOS.
+                </p>
+                <p>
+                  3. A false signifier (“remember me” option) - remember username only. Users have to input the password
+                  again.
+                </p>
+                <p>
+                  4. Login page is not the default page of the app when users open the app.
+                </p>
+              </p>
+            </h4>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="swiper mySwiper hifi">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Images/sce/demo2.png" alt="redesign 1">
+            <h4>
+              Home Page
+              <br>
+              <p>
+                1. From interviews and user surveys, most users were concerned with being able to access key features
+                easily and quickly.
+                By having content that isn’t relevant to their interests, users will be less likely to use the app.
+                <br>
+                <p>2. Redesigned nav bar helps users identify the current page. In addition, we observed that if users
+                  tried to scroll past alert popups, they would end up skipping past some buttons or signifiers of the
+                  interface.
+                  Redesigning how alerts are handled would stop users from ignoring important interface components.</p>
+              </p>
+            </h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/sce/home old.png" alt="sketch2">
+            <h4>Problems
+              <p>
+                1. Old design’s homepage didn’t properly present the main features of the app. When first entering the
+                app, the home screen uses most of its space for an image and a link that redirects you away from the
+                app. <br>
+                <p>
+                  2. Alerts pop up when loading up most pages in the old app, including the home page.
+                </p>
+
+              </p>
+            </h4>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="swiper mySwiper hifi">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Images/sce/demo3.png" alt="redesign 1">
+            <h4>
+              My Bill Page
+              <br>
+              <p>
+                1. Viewing utility bills and making a payment were the top two selected choices of why our survey takers
+                would use an utility app. <br>
+
+              </p>
+            </h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/sce/bill old.png" alt="sketch2">
+            <h4>Problems
+              <p>
+                1. TThe original ‘My bill’ page can be accessed through a multi-step path: home-> my account-> billing &
+                payments. Viewing my bill is one of the most significant features of the sce mobile app, and this path
+                is not very obvious and too tedious. <br>
+                <p>
+                  2. The UI of the old page doesn’t do a very good job at visualizing information regarding users’
+                  current bill: the wording of the due date is very tedious, making it hard to read for users; the
+                  difference between pay now and view bill isn’t obvious at first glance.
+
+                </p>
+
+              </p>
+            </h4>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="swiper mySwiper hifi">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Images/sce/demo4.png" alt="redesign 1">
+            <h4>
+              Discover Page
+              <br>
+              <p>
+                1. From analysis of the user survey, majority of users would like customer support to be present in the
+                app. Thus, we think it’s important to make customer support easily discoverable.
+                <br>
+                <p>2. During the usability test, we found that most of our participants got confused over redundant
+                  features, such as “My Home”. They were misguided by the name of these features (false signifier), and
+                  therefore deviated from their original path. </p>
+              </p>
+            </h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/sce/discover old.png" alt="sketch2">
+            <h4>Problems
+              <p>
+                1. The path to find customer service information is unnecessarily complicated. Users need to perform an
+                extra step (clicking on “Contact Us”) to acquire customer service information when they are already on
+                the customer support page.
+                <br>
+                <p>
+                  2. Many features in the original app are redundant and unnecessary. Yet, their names are misleading.
+                  For example, the “My Home” feature, as shown in the third figure, displays nothing but advertisements
+                  for SoCal Edison’s programs.
+                </p>
+
+              </p>
+            </h4>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+      <div class="swiper mySwiper hifi">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Images/sce/demo5.png" alt="redesign 1">
+            <h4>
+              Usage Page
+              <br>
+              <p>
+                1. This is a common functionality that users want to check based on the survey we did.
+                <br>
+
+            </h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/sce/usage old.png" alt="sketch2">
+            <h4>Problems
+              <p>
+                1. The usage function cannot be successfully accessed in the old mobile app. (false signifier) <br>
+
+              </p>
+            </h4>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+      <div class="swiper mySwiper hifi">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Images/sce/demo6.png" alt="redesign 1">
+            <h4>
+              Outage Page
+              <br>
+              <p>
+                1. In our usability test findings, a lot of users cannot find Outage Center as a first time user. The
+                “report outage” button is also hard to find. <br>
+
+              </p>
+            </h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/sce/outage old.png" alt="sketch2">
+            <h4>Problems
+              <p>
+                1. The original report outage page has an out-moded layout. It excessively uses inanimate colors and
+                does not auto-resize in respect of different screen sizes. <br>
+                <p>
+                  2. Bad efficiency of using the interface space. The user has to scroll down to see the option of
+                  report outage.
+
+                </p>
+
+              </p>
+            </h4>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="swiper mySwiper hifi">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Images/sce/demo7.png" alt="redesign 1">
+            <h4>
+              Setting Page
+              <br>
+              <p>
+                1. In our usability test, we found that it was difficult for users to find the page to change personal
+                information such as name. They would click on “View/Manage Accounts” when the correct solution was
+                finding the “Identity” page, which was hidden in the top right menu.
+                <br>
+
+              </p>
+            </h4>
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/sce/setting old.png" alt="sketch2">
+            <h4>Problems
+              <p>
+                1. Hard to find in the original path design <br>
+                <p>
+                  2. False signifier, since “View/Manage Accounts” button in “My Account” page had an option to change
+                  nickname, but not other personal information.
+                </p>
+                <p>
+                  3. Information was scattered in different parts of the app.
+                </p>
+
+              </p>
+            </h4>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </article>
+
+  <div class="margin20">
+    <h1>Reflection</h1>
+    <p>
+      This was my very first project to really apply UX design process and methods. Although it was only 10 weeks, but this 
+      project helped me to learn independently and build my first design (all the mockups were created via Adobe Photoshop); 
+      it also spiked my interests on UX design. 
+      During this 10 weeks working with one another, there were many ups and downs, but we learned how to efficiently express our critical opinions,
+      also the ability to handle disagreement.
+    </p>
+    <p>
+      I cannot forget the help from Professor Bitez and TA Hillary who gave us feedback, and guided us all the way. It was more than a project, it was a great experience that I will be cherished. 
+    </p>
+  </div>
+
+
+  <!--for all pages -->
+
+  <footer>
+    <a href="mailto:tianxiongwu@hotmail.com">tianxiongwu@hotmail.com</a>
+    <br><br>
+    <p>
+      Focus on details. <br>
+      Let's get in touch.
+    </p>
+    <br>
+    <a href="https://www.behance.net/tianxiongwu" target="_blank"><i class="fab fa-behance-square"></i></a>
+    <a href="https://github.com/tianxiongwu" target="_blank"><i class="fab fa-github-square"></i></a>
+
+    <p class="footnotes">
+      This site is hand-crafted with care.
+      <br>
+      Copyright © Tianxiong Wu.
+    </p>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+</body>
