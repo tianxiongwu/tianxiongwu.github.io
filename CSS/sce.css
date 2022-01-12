@@ -190,6 +190,13 @@ h4 {
 
 
 
+.padding20 p{
+    line-height: 1.8;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 300;
+}
 
 
 
