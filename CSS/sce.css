@@ -305,7 +305,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     -webkit-box-pack: justify;
-    height: 220px;
+    height: 250px;
     border-radius: 5px;
     z-index: 1;
     padding-bottom: 50px;
