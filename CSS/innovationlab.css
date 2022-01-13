@@ -83,6 +83,13 @@ h2 {
     font-size: 2vw;
     line-height: 2;
     font-weight: 300;
+    color: #5a8ab4;
+}
+
+h3
+{
+    font-size: 1.5vw;
+    color: #e0952f;
 }
 
 h1::before {
@@ -262,7 +269,7 @@ p>em {
 
 .swiper-slide img {
     display: block;
-    width: 50%;
+    width: 60%;
    
     object-fit: cover;
 }
@@ -280,6 +287,14 @@ p>em {
     width: 50%;
 }
 
+
+
+
+iframe
+{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 footer {
     float: left;
