@@ -160,6 +160,7 @@ p>em {
 
 
 
+
 .margin20,
 .padding20,
 .padding15 p {
@@ -287,6 +288,13 @@ p>em {
     width: 50%;
 }
 
+.gtn img
+{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: block;
+}
 
 
 
