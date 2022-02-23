@@ -1,5 +1,4 @@
-*
-{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -10,8 +9,7 @@
 }
 
 
-header
-{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,50 +24,45 @@ header
     font-weight: 400;
 }
 
-.sticky
-{
+.sticky {
     padding: 1px 20px;
     color: antiquewhite;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
-  
+
 }
 
-.nav_bar
-{
+.nav_bar {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav_bar .current
-{
+.nav_bar .current {
     color: rgb(168, 204, 235);
     font-weight: 400;
 }
-.nav_bar li 
-{
+
+.nav_bar li {
     position: relative;
     list-style: none;
     display: inline-block;
     padding: 0px 1.19vw;
 }
 
-.nav_bar li a
-{
+.nav_bar li a {
     transition: all 0.5s ease 0s;
-    
+
     font-size: 17px;
     color: #333;
 }
 
-.nav_bar li a:hover
-{
+.nav_bar li a:hover {
     color: rgb(91, 181, 255);
 }
-header .logo
-{
+
+header .logo {
     position: relative;
     cursor: pointer;
     width: 50px;
@@ -96,21 +89,19 @@ header .logo
 
 
 
-section h1
-{
+section h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-section
-{
+
+section {
     padding-left: 11.9vw;
     padding-right: 11.9vw;
     padding-bottom: 100px;
 }
 
 
-.self
-{
+.self {
     border-radius: 50%;
     height: 300px;
     width: auto;
@@ -119,11 +110,10 @@ section
     margin-right: auto;
     margin-top: 15%;
     align-content: center;
-    
+
 }
 
-.myself
-{
+.myself {
     float: left;
     width: 50%;
     line-height: 1.8;
@@ -131,60 +121,30 @@ section
     padding: 5%;
 }
 
-
-@media only screen and (max-width:770px) {
-    iframe, .myself {
-      width:100%;
-      display: block;
-      position: relative;
-      font-size: 13px;
-    }
-  }
-.skills
-{
+.skills {
     font-weight: 600;
     font-size: 40px;
 }
 
-.skilltype
-{
+.skilltype {
     font-weight: 300;
     font-size: 25px;
     color: gray;
 }
-.tag
-{
+
+.tag {
     border-radius: 5px;
     background-color: #333;
     text-align: center;
     display: inline-block;
     color: white;
-    margin-top: 15px;   
+    margin-top: 15px;
     padding-left: 8px;
     padding-right: 8px;
     font-size: 15px;
     font-weight: 300;
 }
 
-@media only screen and (max-width:770px) {
-    .skills, .logo {
-      font-size: 30px;
-      width: 40px;
-    }
-  }
-
-  @media only screen and (max-width:770px) {
-    .skilltype {
-      font-size: 20px;
-    }
-  }
-
-
-  @media only screen and (max-width:770px) {
-    .tag {
-      font-size: 12px;
-    }
-  }
 
 
 
@@ -194,72 +154,84 @@ section
 
 
 
-footer 
-{
+
+
+footer {
     float: left;
     margin-top: 11.9vw;
     margin-right: 11.9vw;
     margin-left: 11.9vw;
-    margin-bottom: 90px;   
+    margin-bottom: 90px;
 }
-footer a
-{
+
+footer a {
     transition: all 0.5s ease 0s;
     color: black;
     font-weight: 800;
     font-size: 3vw;
 }
-footer a:hover
-{
+
+footer a:hover {
     color: gray;
 }
 
-footer i
-{
- 
+footer i {
+
     font-size: 25px;
     transition: all 0.5s ease 0s;
     color: black;
 }
 
-footer i:hover
-{
+footer i:hover {
     color: gray;
 }
 
-footer p
-{
+footer p {
     color: grey;
     font-weight: 300;
 }
 
-.footnotes
-{
+.footnotes {
     font-size: 10px;
 }
 
-@media screen and (max-width:770px) {
+@media screen and (max-width:850px) {
     .nav_bar li a {
         font-size: 13px;
     }
-  }
 
-  @media only screen and (max-width:770px) {
-    footer, section {
-        padding-right: 5px;
-        padding-left: 5px;
-
-    }
-  }
-
-@media only screen and (max-width:770px) {
     footer a {
         font-size: 20px;
     }
-  }
-@media only screen and (max-width:770px) {
+
     footer p {
         font-size: 10px;
     }
-  }
 
+    .skills,
+    .logo {
+        font-size: 30px;
+        width: 40px;
+    }
+
+    .skilltype {
+        font-size: 20px;
+    }
+
+    .tag {
+        font-size: 12px;
+    }
+
+    iframe,
+    .myself {
+        width: 100%;
+        display: block;
+        position: relative;
+        font-size: 13px;
+    }
+
+    section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
