@@ -347,13 +347,72 @@ footer p {
 
 @media screen and (max-width: 850px)
 {
+    h2
+    {
+        font-size: 20px;
+    }
+    h3
+    {
+        font-size: 18px;
+    }
     .hero
     {
         display: block;
+        padding-top: 15%;
     }
     .hero .title
     {
-        font-size: 20px;
+        font-size: 25px;
         padding-bottom: 0px;
     }
+
+    .padding15 p
+    {
+        font-size: 15px;
+    }
+    .margin20 p
+    {
+        font-size: 15px;
+    }
+    .padding20 p
+    {
+        font-size: 15px;
+    }
+    .hero img
+    {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 5%;
+    }
+    .project_member
+    {
+        font-size: 12px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .problem
+    {
+        display: block;
+    }
+    .problem img
+    {
+        width: 100%;
+        padding-top: 5%;
+        padding-left: 0px;
+    }
+    .swiper-slide img
+    {
+        width: 90%;
+    }
+    iframe
+    {
+        width: 100%;
+    }
+
+    .reflection img
+    {
+        padding-top: 5%;
+        width: 100%;
+    }
+
 } 
