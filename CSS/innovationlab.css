@@ -294,6 +294,8 @@ p>em {
     margin-right: auto;
     justify-content: center;
     display: block;
+    padding-top: 20px;
+    width: 90%;
 }
 
 
@@ -342,3 +344,16 @@ footer p {
 .footnotes {
     font-size: 10px;
 }
+
+@media screen and (max-width: 850px)
+{
+    .hero
+    {
+        display: block;
+    }
+    .hero .title
+    {
+        font-size: 20px;
+        padding-bottom: 0px;
+    }
+} 
