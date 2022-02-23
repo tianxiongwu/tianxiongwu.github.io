@@ -347,6 +347,10 @@ footer p {
 
 @media screen and (max-width: 850px)
 {
+    h1
+    {
+        font-size: 22px;
+    }
     h2
     {
         font-size: 20px;
@@ -373,10 +377,21 @@ footer p {
     .margin20 p
     {
         font-size: 15px;
+        
+    }
+    .margin20
+    {
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .padding20 p
     {
         font-size: 15px;
+    }
+    .padding20
+    {
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .hero img
     {
@@ -386,9 +401,15 @@ footer p {
     }
     .project_member
     {
-        font-size: 12px;
-        margin-left: 10%;
-        margin-right: 10%;
+        
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 10px;
+    }
+
+    .project_member p
+    {
+        font-size: 10px;
     }
     .problem
     {
@@ -400,6 +421,14 @@ footer p {
         padding-top: 5%;
         padding-left: 0px;
     }
+    .solution
+    {
+        display: block;
+    }
+    .solution img
+    {
+        width: 100%;
+    }
     .swiper-slide img
     {
         width: 90%;
@@ -407,6 +436,7 @@ footer p {
     iframe
     {
         width: 100%;
+        height: 80%;
     }
 
     .reflection img
