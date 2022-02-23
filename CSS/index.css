@@ -366,7 +366,7 @@ footer a
     transition: all 0.5s ease 0s;
     color: black;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 3vw;
     display: inline;
 }
 footer a:hover
@@ -384,4 +384,78 @@ footer p
 .footnotes
 {
     font-size: 10px;
+}
+
+
+@media screen and (max-width: 850px)
+{
+    video
+    {
+        width: 0;
+    }
+    .jumptowork
+    {
+        font-size: 0;
+    }
+    .introduction
+    {
+        background-color: #333;
+        color: whitesmoke;
+        font-weight: 300;
+        position: center;
+        padding-bottom: 100%;
+        margin-bottom: 0;
+    }
+    .greeting
+    {
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        top: 30%;
+        text-align: center;
+    }
+    .work
+    {
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 10%;
+        padding-left: 10%;
+        margin-bottom: 15%;
+        max-width: 940px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .featuredProject
+    {
+        margin-bottom: 5%;
+        font-weight: 300;
+        margin-top: 0%;
+        letter-spacing: 1px;
+    }
+    .project_detail
+    {
+        display: block;
+        padding-bottom: 50px;
+    }
+    .logos
+    {
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+    .year
+    {
+        margin-bottom: 1rem;
+    }
+    .tag
+    {
+        margin-bottom: 0px;
+    }
+    .viewCase
+    {
+        margin-top: 30px;
+    }
+
+
+
 }
