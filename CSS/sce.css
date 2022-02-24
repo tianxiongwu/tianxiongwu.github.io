@@ -261,14 +261,6 @@ h4 {
 
 
 
-@media only screen and (max-width:770px) {
-
-    .problem,
-    .project_detail,
-    .users {
-        width: 100%;
-    }
-}
 
 .users {
     padding-top: 150px;
@@ -459,63 +451,127 @@ footer p {
     font-size: 10px;
 }
 
-@media only screen and (max-width:770px) {
-    .demo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
 
+@media only screen and (max-width:850px) {
+
+
+    .nav_bar li a {
+        font-size: 13px;
     }
-}
-
-@media only screen and (max-width:770px) {
-
-    footer,
-    section {
-        padding-right: 5px;
-        padding-left: 5px;
-
-    }
-}
-
-@media only screen and (max-width:770px) {
-
-    .users,
-    .usability {
-        padding-right: 20px;
-        padding-left: 20px;
-
-    }
-}
-
-@media only screen and (max-width:770px) {
-
-    .problem,
-    .project_detail,
-    .users,
-    .usability {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width:770px) {
     footer a {
         font-size: 20px;
     }
-}
-
-
-@media only screen and (max-width:770px) {
     footer p {
         font-size: 10px;
     }
-}
+    h1
+    {
+        font-size: 22px;
+    }
+    h2
+    {
+        font-size: 20px;
+    }
+    h3
+    {
+        font-size: 18px;
+    }
 
-@media only screen and (max-width:770px) {
+    h4
+    {
+        font-size: 16px;
+    }
 
-    .nav_bar li a,
-    .logo {
-        font-size: 13px;
-        width: 40px;
+    .margin20
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .padding15 p, .ideate h2>p
+    {
+        font-size: 15px;
+    }
+    .margin20 p
+    {
+        font-size: 15px;
+        
+    }
+    .sce
+    {
+        width: 70%;
+    }
+    .padding20 p
+    {
+        font-size: 15px;
+    }
+    .padding20
+    {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .width70, .problem img
+    {
+        width: 100%;
+    }
+
+    .project_member
+    {
+        
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 10px;
+    }
+
+    .project_member p
+    {
+        font-size: 10px;
+    }
+
+    .problem, .ideate
+    {
+        display: block;
+    }
+    .quote
+    {
+        padding: 20px 30px;
+    }
+    .comparsion, .ideate img
+    {
+        width: 100%;
+        float: none;
+    }
+    .users
+    {
+        padding-top: 50px;
+    }
+    .concerns
+    {
+        height: auto;
+        flex-wrap: wrap;
+        
+    }
+    .concerns p
+    {
+        width: 45%;
+        padding: 20px;
+    }
+    .sketch img
+    {
+        width: 100%;
+    }
+    .swiper-slide
+    {
+        display: block;
+    }
+    .hifi img
+    {
+        width: 100%;
+        padding-bottom: 20px;
+        padding-right: 0px;
+    }
+    .backtop
+    {
+        display: none;
     }
 }
