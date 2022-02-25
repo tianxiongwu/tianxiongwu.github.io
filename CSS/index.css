@@ -325,16 +325,20 @@ video
 {
     width: 120px;
     height: 1px;
-
+    
     border-top: #333;
     color: black;
     background: black;
     transition: height 0.3s;
     font-size: 15px;
 }
+.viewCase p
+{
+    padding-top: 10px;
+}
 .viewCase:hover
 {
-    height: 5px;
+    height: 10px;
 }
 .comingSoon
 {
