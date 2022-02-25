@@ -221,7 +221,9 @@ video
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 16px;
+    
 }
+
 
 .project_detail h1
 {
