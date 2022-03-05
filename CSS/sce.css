@@ -343,7 +343,21 @@ p>em {
     background-color: rgba(137, 184, 162, 0.37);
 }
 
+.design_system > h4
+{
+    color: rgb(206, 248, 248);
+    font-size: 1.3vw;
+    font-weight: 400;
+    line-height: 1.5;
+}
 
+.design_system > h5
+{
+    color: bisque;
+    font-size: 1.3vw;
+    font-weight: 400;
+    line-height: 1.5;
+}
 
 .finaldesign {
     background-color: rgba(93, 160, 100, 0.685);
@@ -477,10 +491,11 @@ footer p {
         font-size: 18px;
     }
 
-    h4
+    h4, .design_system > h4, .design_system > h5
     {
         font-size: 16px;
     }
+
 
     .margin20
     {
