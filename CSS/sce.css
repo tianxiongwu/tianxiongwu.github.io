@@ -422,6 +422,13 @@ p>em {
     object-fit: cover;
 }
 
+.persona img
+{
+    display: block;
+    width: 100%;
+
+    object-fit: cover;
+}
 
 
 
